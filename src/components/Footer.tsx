@@ -13,15 +13,6 @@ const socialLinks = [
     ),
   },
   {
-    name: "Twitter",
-    url: "https://twitter.com/diveshsaini",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-      </svg>
-    ),
-  },
-  {
     name: "LinkedIn",
     url: "https://linkedin.com/in/diveshsaini",
     icon: (
@@ -33,14 +24,16 @@ const socialLinks = [
     ),
   },
   {
-    name: "Dribbble",
-    url: "https://dribbble.com/diveshsaini",
+    name: "LeetCode",
+    url: "https://leetcode.com/diveshsaini",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="12" r="10"></circle>
-        <path d="M19.13 5.09C15.22 9.14 10 10.44 2.25 10.94"></path>
-        <path d="M21.75 12.84c-6.62-1.41-12.14 1-16.38 6.32"></path>
-        <path d="M8.56 2.75c4.37 6 6 9.42 8 17.72"></path>
+        <path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h1"></path>
+        <path d="M17 3h1a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-1"></path>
+        <path d="M12 12v9"></path>
+        <path d="M8 21h8"></path>
+        <path d="M8 15h8"></path>
+        <path d="M8 18h8"></path>
       </svg>
     ),
   },
@@ -54,7 +47,7 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
             <div className="text-lg font-medium mb-2">Divesh Saini</div>
             <p className="text-sm text-neutral-600 max-w-xs">
-              Designer and developer specializing in minimal, purposeful digital experiences.
+              B.Tech CSE student specializing in AI/ML and full-stack development.
             </p>
           </div>
           

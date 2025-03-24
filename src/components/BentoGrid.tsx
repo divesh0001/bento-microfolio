@@ -7,43 +7,27 @@ import ProjectCard from "./ProjectCard";
 const projects = [
   {
     id: 1,
-    title: "E-commerce Redesign",
-    description: "A complete overhaul of an online shopping experience focusing on simplicity and conversion.",
-    imageSrc: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
-    link: "#",
+    title: "StocksGod",
+    description: "AI-powered stock market platform for real-time news, IPO GMP analysis, and stock price predictions.",
+    imageSrc: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80",
+    link: "https://github.com/yourusername/stocksgod",
     size: "large" as const,
   },
   {
     id: 2,
-    title: "Mobile Banking App",
-    description: "A clean, intuitive banking application designed for the modern user.",
-    imageSrc: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-    link: "#",
-    size: "small" as const,
+    title: "Edutech",
+    description: "Interactive e-learning platform with tutorial videos on HTML, CSS, JavaScript, ML, and Deep Learning.",
+    imageSrc: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
+    link: "https://github.com/yourusername/edutech",
+    size: "medium" as const,
   },
   {
     id: 3,
-    title: "Portfolio Website",
-    description: "A minimal portfolio for a photographer showcasing their work.",
-    imageSrc: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
-    link: "#",
+    title: "Suraksha AI",
+    description: "Real-time object detection and analysis using YOLOv8, with Flask-based API.",
+    imageSrc: "https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&w=800&q=80",
+    link: "https://github.com/yourusername/suraksha-ai",
     size: "medium" as const,
-  },
-  {
-    id: 4,
-    title: "Travel Blog",
-    description: "A minimalist travel blog with a focus on photography and storytelling.",
-    imageSrc: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
-    link: "#",
-    size: "medium" as const,
-  },
-  {
-    id: 5,
-    title: "Smart Home Dashboard",
-    description: "An elegant interface for controlling smart home devices.",
-    imageSrc: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
-    link: "#",
-    size: "small" as const,
   },
 ];
 
@@ -85,11 +69,11 @@ const BentoGrid = () => {
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
           <div className="overflow-hidden">
-            <h2 className="text-2xl md:text-3xl font-bold animate-slide-in">Selected Projects</h2>
+            <h2 className="text-2xl md:text-3xl font-bold animate-slide-in">Projects</h2>
           </div>
           <div className="overflow-hidden">
             <p className="text-neutral-600 mt-4 max-w-xl animate-slide-in" style={{ animationDelay: "0.1s" }}>
-              A curated selection of my recent work across user interface design and front-end development.
+              A selection of my projects in AI/ML, full-stack development, and cloud technologies.
             </p>
           </div>
         </div>

@@ -30,7 +30,7 @@ const Hero = () => {
       <div className="max-w-5xl mx-auto space-y-6">
         <div className="overflow-hidden">
           <p className="text-sm md:text-base text-neutral-600 animate-slide-in">
-            Frontend Developer & UI/UX Designer
+            B.Tech Computer Science & Engineering Student | Tech Head, Data Science Society
           </p>
         </div>
         
@@ -47,13 +47,13 @@ const Hero = () => {
               transition: 'background-position 0.2s ease-out',
             }}
           >
-            Crafting digital experiences with precision & purpose
+            Building innovative solutions with AI & development
           </h1>
         </div>
         
         <div className="overflow-hidden">
           <p className="text-lg md:text-xl text-neutral-600 max-w-2xl animate-slide-in" style={{ animationDelay: '0.2s' }}>
-            I design and develop minimalist interfaces that prioritize user experience, focusing on what truly matters.
+            I'm passionate about creating AI-powered applications and clean user interfaces, with a focus on machine learning and full-stack development.
           </p>
         </div>
         
