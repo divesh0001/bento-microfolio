@@ -95,7 +95,7 @@ const BentoGrid = () => {
               techStack={project.techStack}
               liveDemo={project.liveDemo}
               size={project.size}
-              className="opacity-0 transform translate-y-8 transition-all duration-700 ease-out"
+              className="bento-card opacity-0 transform translate-y-8 transition-all duration-700 ease-out"
             />
           ))}
         </div>
