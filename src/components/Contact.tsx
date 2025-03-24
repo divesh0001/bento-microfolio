@@ -79,7 +79,7 @@ const Contact = () => {
                       <circle cx="4" cy="4" r="2"></circle>
                     </svg>
                   </div>
-                  <a href="https://linkedin.com/in/diveshsaini" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                  <a href="https://www.linkedin.com/in/diveshsaini/" target="_blank" rel="noopener noreferrer" className="hover:underline">
                     LinkedIn Profile
                   </a>
                 </div>
@@ -90,7 +90,7 @@ const Contact = () => {
                       <path d="M9 18c-4.51 2-5-2-7-2"></path>
                     </svg>
                   </div>
-                  <a href="https://github.com/diveshsaini" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                  <a href="https://github.com/divesh0001" target="_blank" rel="noopener noreferrer" className="hover:underline">
                     GitHub Profile
                   </a>
                 </div>
@@ -105,7 +105,7 @@ const Contact = () => {
                       <path d="M8 18h8"></path>
                     </svg>
                   </div>
-                  <a href="https://leetcode.com/diveshsaini" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                  <a href="https://leetcode.com/u/divesh_saini/" target="_blank" rel="noopener noreferrer" className="hover:underline">
                     LeetCode Profile
                   </a>
                 </div>

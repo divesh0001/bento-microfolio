@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -73,8 +72,8 @@ const Resume = () => {
                 <div className="flex justify-between">
                   <div className="font-medium">StocksGod</div>
                   <div className="flex gap-2">
-                    <a href="https://github.com/yourusername/stocksgod" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">GitHub</a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">Live Demo</a>
+                    <a href="https://github.com/divesh0001/stocksgod" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">GitHub</a>
+                    <a href="https://stocksgod.netlify.app" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">Live Demo</a>
                   </div>
                 </div>
                 <div className="text-sm">AI-powered stock market platform for real-time news, IPO GMP analysis, and stock price predictions.</div>
@@ -84,8 +83,8 @@ const Resume = () => {
                 <div className="flex justify-between">
                   <div className="font-medium">Edutech</div>
                   <div className="flex gap-2">
-                    <a href="https://github.com/yourusername/edutech" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">GitHub</a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">Live Demo</a>
+                    <a href="https://github.com/divesh0001/edutech" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">GitHub</a>
+                    <a href="https://edutech-learning.vercel.app" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">Live Demo</a>
                   </div>
                 </div>
                 <div className="text-sm">Interactive e-learning platform with tutorial videos on HTML, CSS, JavaScript, Machine Learning, and Deep Learning.</div>
@@ -95,7 +94,7 @@ const Resume = () => {
                 <div className="flex justify-between">
                   <div className="font-medium">Suraksha AI</div>
                   <div className="flex gap-2">
-                    <a href="https://github.com/yourusername/suraksha-ai" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">GitHub</a>
+                    <a href="https://github.com/divesh0001/suraksha-ai" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">GitHub</a>
                   </div>
                 </div>
                 <div className="text-sm">Real-time object detection and analysis using YOLOv8, with Flask-based API.</div>
