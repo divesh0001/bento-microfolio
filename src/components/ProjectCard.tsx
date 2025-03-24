@@ -7,6 +7,8 @@ interface ProjectCardProps {
   description: string;
   imageSrc: string;
   link: string;
+  techStack?: string;
+  liveDemo?: string;
   className?: string;
   imageClassName?: string;
   contentClassName?: string;
@@ -18,6 +20,8 @@ const ProjectCard = ({
   description,
   imageSrc,
   link,
+  techStack,
+  liveDemo,
   className,
   imageClassName,
   contentClassName,
@@ -66,7 +70,7 @@ const ProjectCard = ({
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-10" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-10" />
       
       <div 
         className={cn(
@@ -93,25 +97,60 @@ const ProjectCard = ({
         </h3>
         <p 
           className={cn(
-            "text-sm opacity-0 translate-y-4 transition-all duration-300 delay-150",
+            "text-sm opacity-0 translate-y-4 transition-all duration-300 delay-150 line-clamp-2",
             isHovered ? "opacity-100 translate-y-0" : ""
           )}
         >
           {description}
         </p>
-        <a 
-          href={link} 
+        
+        {techStack && (
+          <p 
+            className={cn(
+              "text-xs mt-2 opacity-0 translate-y-4 transition-all duration-300 delay-200 text-gray-300",
+              isHovered ? "opacity-100 translate-y-0" : ""
+            )}
+          >
+            <span className="font-semibold">Tech:</span> {techStack}
+          </p>
+        )}
+        
+        <div 
           className={cn(
-            "mt-4 inline-flex items-center gap-1 text-sm opacity-0 translate-y-4 transition-all duration-300 delay-200",
+            "mt-4 flex gap-3 opacity-0 translate-y-4 transition-all duration-300 delay-250",
             isHovered ? "opacity-100 translate-y-0" : ""
           )}
         >
-          <span>View Project</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M5 12h14"></path>
-            <path d="m12 5 7 7-7 7"></path>
-          </svg>
-        </a>
+          <a 
+            href={link} 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-sm hover:underline"
+          >
+            <span>GitHub</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+          
+          {liveDemo && (
+            <a 
+              href={liveDemo} 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-sm hover:underline"
+            >
+              <span>Live Demo</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );

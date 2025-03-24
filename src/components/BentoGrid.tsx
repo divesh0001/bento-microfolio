@@ -3,22 +3,26 @@ import { useRef, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import ProjectCard from "./ProjectCard";
 
-// Define project data
+// Define project data with your actual projects
 const projects = [
   {
     id: 1,
     title: "StocksGod",
     description: "AI-powered stock market platform for real-time news, IPO GMP analysis, and stock price predictions.",
     imageSrc: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80",
-    link: "https://github.com/yourusername/stocksgod",
+    link: "https://github.com/divesh-git/stocksgod",
+    techStack: "React, JavaScript, Vite, Flask, Python, TensorFlow, Keras, LSTM, Firebase, Tiingo API, Netlify",
+    liveDemo: "https://stocksgod.netlify.app",
     size: "large" as const,
   },
   {
     id: 2,
     title: "Edutech",
-    description: "Interactive e-learning platform with tutorial videos on HTML, CSS, JavaScript, ML, and Deep Learning.",
+    description: "Interactive e-learning platform with tutorial videos on HTML, CSS, JavaScript, Machine Learning, and Deep Learning.",
     imageSrc: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
-    link: "https://github.com/yourusername/edutech",
+    link: "https://github.com/divesh-git/edutech",
+    techStack: "HTML, CSS, JavaScript, Python, Vercel",
+    liveDemo: "https://edutech-learning.vercel.app",
     size: "medium" as const,
   },
   {
@@ -26,7 +30,9 @@ const projects = [
     title: "Suraksha AI",
     description: "Real-time object detection and analysis using YOLOv8, with Flask-based API.",
     imageSrc: "https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&w=800&q=80",
-    link: "https://github.com/yourusername/suraksha-ai",
+    link: "https://github.com/divesh-git/suraksha-ai",
+    techStack: "Python, Flask, Firebase, PyTorch, OpenCV, YOLOv8, Poetry",
+    liveDemo: "",
     size: "medium" as const,
   },
 ];
@@ -86,6 +92,8 @@ const BentoGrid = () => {
               description={project.description}
               imageSrc={project.imageSrc}
               link={project.link}
+              techStack={project.techStack}
+              liveDemo={project.liveDemo}
               size={project.size}
               className="opacity-0 transform translate-y-8 transition-all duration-700 ease-out"
             />
