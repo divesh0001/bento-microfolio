@@ -1,5 +1,7 @@
 
 import { cn } from "@/lib/utils";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import Resume from "@/pages/Resume";
 
 const socialLinks = [
   {
@@ -49,6 +51,14 @@ const Footer = () => {
             <p className="text-sm text-neutral-600 max-w-xs">
               B.Tech CSE student specializing in AI/ML and full-stack development.
             </p>
+            <Sheet>
+              <SheetTrigger className="mt-4 text-sm text-blue-600 hover:underline">View Resume</SheetTrigger>
+              <SheetContent side="right" className="w-full sm:max-w-3xl overflow-y-auto">
+                <div className="py-6">
+                  <Resume />
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
           
           <div className="flex flex-col items-center md:items-end">
