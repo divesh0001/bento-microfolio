@@ -1,6 +1,9 @@
 
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import Resume from "@/pages/Resume";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -36,8 +39,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <a 
           href="#" 
-          className="text-lg font-medium transition-opacity hover:opacity-80"
+          className="flex items-center gap-2 text-lg font-medium transition-opacity hover:opacity-80"
         >
+          <Avatar className="h-8 w-8">
+            <AvatarImage src="/lovable-uploads/5ee6d352-d1fd-4479-9b08-5d986b38b6fc.png" alt="Divesh Saini" />
+            <AvatarFallback>DS</AvatarFallback>
+          </Avatar>
           Divesh Saini
         </a>
         <nav className="hidden md:flex items-center space-x-8">
@@ -50,12 +57,18 @@ const Navbar = () => {
               {item}
             </a>
           ))}
-          <a
-            href="/resume"
-            className="text-sm bg-black text-white px-4 py-2 rounded-full transition-opacity hover:opacity-90"
-          >
-            Resume
-          </a>
+          <Sheet>
+            <SheetTrigger asChild>
+              <button className="text-sm bg-black text-white px-4 py-2 rounded-full transition-opacity hover:opacity-90">
+                Resume
+              </button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-full sm:max-w-3xl overflow-y-auto">
+              <div className="py-6">
+                <Resume />
+              </div>
+            </SheetContent>
+          </Sheet>
         </nav>
         <button 
           className="md:hidden z-50" 
@@ -94,13 +107,21 @@ const Navbar = () => {
                 {item}
               </a>
             ))}
-            <a
-              href="/resume"
-              className="text-lg bg-black text-white px-6 py-2 rounded-full"
-              onClick={toggleMobileMenu}
-            >
-              Resume
-            </a>
+            <Sheet>
+              <SheetTrigger asChild>
+                <button 
+                  className="text-lg bg-black text-white px-6 py-2 rounded-full"
+                  onClick={toggleMobileMenu}
+                >
+                  Resume
+                </button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-full sm:max-w-3xl overflow-y-auto">
+                <div className="py-6">
+                  <Resume />
+                </div>
+              </SheetContent>
+            </Sheet>
           </nav>
         </div>
       </div>

@@ -1,9 +1,54 @@
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 
 const Hero = () => {
   const textRef = useRef<HTMLHeadingElement>(null);
+  const [typewriterText, setTypewriterText] = useState("");
+  const [typewriterIndex, setTypewriterIndex] = useState(0);
+  
+  const phrases = [
+    "AI & ML",
+    "Full-Stack Development",
+    "Problem Solving",
+    "Innovation"
+  ];
+  
+  useEffect(() => {
+    let currentPhrase = 0;
+    let currentChar = 0;
+    let isDeleting = false;
+    let typingSpeed = 100;
+    
+    const type = () => {
+      const phrase = phrases[currentPhrase];
+      
+      if (isDeleting) {
+        setTypewriterText(phrase.substring(0, currentChar - 1));
+        currentChar--;
+        typingSpeed = 50;
+      } else {
+        setTypewriterText(phrase.substring(0, currentChar + 1));
+        currentChar++;
+        typingSpeed = 100;
+      }
+      
+      if (!isDeleting && currentChar === phrase.length) {
+        // Pause at the end of typing
+        isDeleting = true;
+        typingSpeed = 1500;
+      } else if (isDeleting && currentChar === 0) {
+        isDeleting = false;
+        currentPhrase = (currentPhrase + 1) % phrases.length;
+        typingSpeed = 500;
+      }
+      
+      setTimeout(type, typingSpeed);
+    };
+    
+    const timer = setTimeout(type, 1000);
+    return () => clearTimeout(timer);
+  }, []);
   
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -30,7 +75,7 @@ const Hero = () => {
       <div className="max-w-5xl mx-auto space-y-6">
         <div className="overflow-hidden">
           <p className="text-sm md:text-base text-neutral-600 animate-slide-in">
-            B.Tech Computer Science & Engineering Student | Tech Head, Data Science Society
+            B.Tech Computer Science & Engineering Student
           </p>
         </div>
         
@@ -47,7 +92,7 @@ const Hero = () => {
               transition: 'background-position 0.2s ease-out',
             }}
           >
-            Building innovative solutions with AI & development
+            Building innovative solutions with <span className="text-blue-600">{typewriterText}<span className="animate-pulse">|</span></span>
           </h1>
         </div>
         
