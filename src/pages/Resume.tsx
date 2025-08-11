@@ -29,26 +29,26 @@ const Resume = () => {
               <div>
                 <div className="flex justify-between">
                   <div className="font-medium">Bennett University</div>
-                  <div className="text-sm text-neutral-500">2022 - 2026 (Expected)</div>
+                  <div className="text-sm text-neutral-500">Expected May 2026</div>
                 </div>
-                <div>B.Tech in Computer Science & Engineering</div>
-                <div className="text-sm text-neutral-600">CGPA: 9.41/10</div>
+                <div>B.Tech in Computer Science and Engineering</div>
+                <div className="text-sm text-neutral-600">CGPA: 9.41/10.00 • Greater Noida</div>
               </div>
               <div>
                 <div className="flex justify-between">
                   <div className="font-medium">St. Xavier's School</div>
-                  <div className="text-sm text-neutral-500">2019 - 2021</div>
+                  <div className="text-sm text-neutral-500">March 2021</div>
                 </div>
-                <div>Higher Secondary</div>
-                <div className="text-sm text-neutral-600">Percentage: 88.6</div>
+                <div>Higher Secondary Education</div>
+                <div className="text-sm text-neutral-600">Percentage: 88.6 • Bhiwadi, Rajasthan</div>
               </div>
               <div>
                 <div className="flex justify-between">
                   <div className="font-medium">St. Xavier's School</div>
-                  <div className="text-sm text-neutral-500">2017 - 2019</div>
+                  <div className="text-sm text-neutral-500">March 2019</div>
                 </div>
                 <div>Secondary Education</div>
-                <div className="text-sm text-neutral-600">Percentage: 92.4</div>
+                <div className="text-sm text-neutral-600">Percentage: 92.4 • Bhiwadi, Rajasthan</div>
               </div>
             </div>
           </section>
@@ -60,32 +60,44 @@ const Resume = () => {
                 <div className="flex justify-between">
                   <div className="font-medium">StocksGod</div>
                   <div className="flex gap-2">
-                    <a href="https://github.com/divesh0001/Stocks-God" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">GitHub</a>
-                    <a href="https://stocksgod.live/" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">Live Demo</a>
+                    <a href="https://github.com/divesh0001/Stocks-God" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">Repository</a>
+                    <a href="https://stocksgod.live/" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">Deployment</a>
                   </div>
                 </div>
-                <div className="text-sm">AI-powered stock market platform for real-time news, IPO GMP analysis, and stock price predictions.</div>
-                <div className="text-sm text-neutral-600 mt-1">Tech Stack: React, JavaScript, Vite, Flask, Python, TensorFlow, Keras, LSTM, Firebase, Tiingo API, Netlify</div>
+                <ul className="text-sm mt-2 space-y-1">
+                  <li>• Built and deployed a stock analysis platform using a Stacked LSTM (TensorFlow/Keras), achieving 2% test error (RMSE 213.2) on stock price forecasting.</li>
+                  <li>• Boosted predictive accuracy by 30% over baseline models through advanced preprocessing and real-time Tiingo API data integration.</li>
+                  <li>• Integrated a Botpress chatbot trained on custom financial data to enhance user interaction.</li>
+                </ul>
+                <div className="text-sm text-neutral-600 mt-2">Tech-Stacks: TensorFlow, Keras, LSTM, Python, Flask, Tiingo API, Botpress, MongoDB</div>
               </div>
               <div>
                 <div className="flex justify-between">
                   <div className="font-medium">Skin Disease Classification</div>
                   <div className="flex gap-2">
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">GitHub</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">Repository</a>
                   </div>
                 </div>
-                <div className="text-sm">Developed a ResNet50-based deep learning model for skin disease classification, achieving 66% accuracy and 0.88 ROC AUC on a 5-class dataset. Automated disease prediction and confidence scoring for user-uploaded medical images.</div>
-                <div className="text-sm text-neutral-600 mt-1">Tech Stack: Python, TensorFlow, Scikit-learn, ResNet50, Pandas, Matplotlib, Seaborn</div>
+                <ul className="text-sm mt-2 space-y-1">
+                  <li>• Developed a ResNet50-based deep learning model for skin disease classification, achieving 66% accuracy and 0.88 ROC AUC on a 5-class dataset.</li>
+                  <li>• Automated disease prediction and confidence scoring for user-uploaded medical images.</li>
+                  <li>• Visualized and interpreted results using ROC curves and confusion matrices.</li>
+                </ul>
+                <div className="text-sm text-neutral-600 mt-2">Tech-Stacks: Python, TensorFlow, Scikit-learn, ResNet50, Pandas, Matplotlib, Seaborn</div>
               </div>
               <div>
                 <div className="flex justify-between">
                   <div className="font-medium">Suraksha AI</div>
                   <div className="flex gap-2">
-                    <a href="https://github.com/divesh0001/Suraksha_AI" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">GitHub</a>
+                    <a href="https://github.com/divesh0001/Suraksha_AI" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">Repository</a>
                   </div>
                 </div>
-                <div className="text-sm">Real-time object detection and analysis using YOLOv8, with Flask-based API.</div>
-                <div className="text-sm text-neutral-600 mt-1">Tech Stack: Python, Flask, Firebase, PyTorch, OpenCV, YOLOv8, Poetry</div>
+                <ul className="text-sm mt-2 space-y-1">
+                  <li>• Focused on the implementation of the YOLOv8 model for real-time object detection and analysis.</li>
+                  <li>• Curated and annotated "threat" and "non-threat" images, reducing false positive rates by 30% and improving real-time alert precision.</li>
+                  <li>• Integrated model into Flask backend, enabling intelligent video analytics and automated monitoring with Python and Firebase.</li>
+                </ul>
+                <div className="text-sm text-neutral-600 mt-2">Tech-Stacks: Python, Flask, Firebase, OpenCV, YOLOv8, Poetry</div>
               </div>
             </div>
           </section>
@@ -95,23 +107,19 @@ const Resume = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <div className="font-medium mb-2">Languages</div>
-                <div className="text-sm">Python, C++, HTML, CSS, JavaScript</div>
+                <div className="text-sm">Python, C++, HTML, CSS, Javascript</div>
               </div>
               <div>
                 <div className="font-medium mb-2">AI/ML Tools & Frameworks</div>
-                <div className="text-sm">TensorFlow, PyTorch, NLP, Pandas, NumPy, YOLO</div>
+                <div className="text-sm">TensorFlow, PyTorch, NLP, Computer Vision, Pandas, NumPy, YOLO</div>
               </div>
               <div>
                 <div className="font-medium mb-2">Tools & Frameworks</div>
-                <div className="text-sm">Git, Atlassian Jira, GitHub, Canva, Visual Studio Code</div>
+                <div className="text-sm">Power BI, Git (Version Control), Atlassian Jira, GitHub, Canva, Visual Studio Code</div>
               </div>
               <div>
                 <div className="font-medium mb-2">Databases</div>
-                <div className="text-sm">MongoDB, MySQL</div>
-              </div>
-              <div>
-                <div className="font-medium mb-2">Cloud Platforms</div>
-                <div className="text-sm">AWS, Microsoft Azure</div>
+                <div className="text-sm">MySQL, MongoDB</div>
               </div>
               <div>
                 <div className="font-medium mb-2">Coursework</div>
@@ -120,18 +128,25 @@ const Resume = () => {
             </div>
           </section>
           
-          <section>
-            <h3 className="text-lg font-semibold mb-4">Achievements & Responsibilities</h3>
+          <section className="mb-8">
+            <h3 className="text-lg font-semibold mb-4">Achievements</h3>
             <ul className="list-disc pl-5 space-y-2 text-sm">
-              <li>Completed Pw Skills Data Science Masters 2.0 course (9 months).</li>
+              <li>Cleared the ServiceNow Certified System Administrator (CSA) exam and became a certified ServiceNow Administrator.</li>
+              <li>Recognized as one of the top 110 students in the Google Cloud Study Jam at Bennett University, earning the Google Cloud Certified: Cloud Computing Foundations Certificate.</li>
+              <li>Completed Pw skill Data Science Masters 2.0 course of 9 months.</li>
+              <li>Solved 350+ Data Structures and Algorithms problems on LeetCode.</li>
+              <li>Won the 3rd prize in Spin The Code contest organised by GeeksForGeeks in December 2022.</li>
+              <li>Awarded for creating an outstanding project at the Hackeye Competition, securing a top 15 position in our university.</li>
               <li>Scored 92.15 percentile in JEE Mains 2022.</li>
-              <li>3rd prize in Spin The Code contest by GeeksForGeeks (Dec 2022).</li>
-              <li>Outstanding project award at the Hackeye Competition, securing a top 15 position.</li>
-              <li>Google Cloud Certified: Cloud Computing Foundations Certificate.</li>
-              <li>Recognized as a top 110 student in the Google Cloud Study Jam at Bennett University.</li>
-              <li>Tech Head, Data Science Society, Bennett University</li>
-              <li>Organizer, Inter-College Hackathon ENIGMA (April 2024)</li>
-              <li>Sports Captain and General Secretary, St. Xavier's School</li>
+            </ul>
+          </section>
+          
+          <section>
+            <h3 className="text-lg font-semibold mb-4">Position of Responsibilities</h3>
+            <ul className="list-disc pl-5 space-y-2 text-sm">
+              <li>Tech Head: Data Science Society, Bennett University.</li>
+              <li>Organiser: Organised an Inter-College Hackathon ENIGMA in which more than 50 teams have participated from Delhi-NCR region In April 2024.</li>
+              <li>Sports Captain and General Secretary: Led school sports teams and student council, showcasing leadership, organizational skills, and teamwork.</li>
             </ul>
           </section>
         </div>
