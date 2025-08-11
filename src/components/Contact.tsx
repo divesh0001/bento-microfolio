@@ -105,7 +105,7 @@ const Contact = () => {
                       <path d="M8 18h8"></path>
                     </svg>
                   </div>
-                  <a href="https://leetcode.com/u/divesh_saini/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                  <a href="https://leetcode.com/u/coder1471/" target="_blank" rel="noopener noreferrer" className="hover:underline">
                     LeetCode Profile
                   </a>
                 </div>
