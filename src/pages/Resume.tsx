@@ -69,14 +69,13 @@ const Resume = () => {
               </div>
               <div>
                 <div className="flex justify-between">
-                  <div className="font-medium">Edutech</div>
+                  <div className="font-medium">Skin Disease Classification</div>
                   <div className="flex gap-2">
-                    <a href="https://github.com/divesh0001/Edutech" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">GitHub</a>
-                    <a href="https://edutech-seven.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">Live Demo</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">GitHub</a>
                   </div>
                 </div>
-                <div className="text-sm">Interactive e-learning platform with tutorial videos on HTML, CSS, JavaScript, Machine Learning, and Deep Learning.</div>
-                <div className="text-sm text-neutral-600 mt-1">Tech Stack: HTML, CSS, JavaScript, Python, Vercel</div>
+                <div className="text-sm">Developed a ResNet50-based deep learning model for skin disease classification, achieving 66% accuracy and 0.88 ROC AUC on a 5-class dataset. Automated disease prediction and confidence scoring for user-uploaded medical images.</div>
+                <div className="text-sm text-neutral-600 mt-1">Tech Stack: Python, TensorFlow, Scikit-learn, ResNet50, Pandas, Matplotlib, Seaborn</div>
               </div>
               <div>
                 <div className="flex justify-between">

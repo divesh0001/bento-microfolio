@@ -17,12 +17,12 @@ const projects = [
   },
   {
     id: 2,
-    title: "Edutech",
-    description: "Interactive e-learning platform with tutorial videos on HTML, CSS, JavaScript, Machine Learning, and Deep Learning.",
-    imageSrc: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
-    link: "https://github.com/divesh0001/Edutech",
-    techStack: "HTML, CSS, JavaScript, Python, Vercel",
-    liveDemo: "https://edutech-seven.vercel.app/",
+    title: "Skin Disease Classification",
+    description: "Developed a ResNet50-based deep learning model for skin disease classification, achieving 66% accuracy and 0.88 ROC AUC on a 5-class dataset.",
+    imageSrc: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=800&q=80",
+    link: "#",
+    techStack: "Python, TensorFlow, Scikit-learn, ResNet50, Pandas, Matplotlib, Seaborn",
+    liveDemo: "",
     size: "medium" as const,
   },
   {
