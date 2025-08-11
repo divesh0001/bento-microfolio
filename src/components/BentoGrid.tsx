@@ -12,7 +12,7 @@ const projects = [
     imageSrc: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80",
     link: "https://github.com/divesh0001/Stocks-God",
     techStack: "React, JavaScript, Vite, Flask, Python, TensorFlow, Keras, LSTM, Firebase, Tiingo API, Netlify",
-    liveDemo: "https://stocksgod.live/",
+    liveDemo: "https://stocksgod.netlify.app/",
     size: "large" as const,
   },
   {

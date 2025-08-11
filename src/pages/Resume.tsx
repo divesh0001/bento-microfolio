@@ -61,7 +61,7 @@ const Resume = () => {
                   <div className="font-medium">StocksGod</div>
                   <div className="flex gap-2">
                     <a href="https://github.com/divesh0001/Stocks-God" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">Repository</a>
-                    <a href="https://stocksgod.live/" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">Deployment</a>
+                    <a href="https://stocksgod.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">Deployment</a>
                   </div>
                 </div>
                 <ul className="text-sm mt-2 space-y-1">
