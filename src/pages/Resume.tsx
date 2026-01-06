@@ -164,7 +164,7 @@ const Resume = () => {
         
         <div className="text-center mb-6">
           <a 
-            href="#" 
+            href="/Divesh_Saini_Resume.pdf" 
             download="Divesh_Saini_Resume.pdf"
             className="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full"
           >
