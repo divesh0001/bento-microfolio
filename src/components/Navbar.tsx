@@ -42,7 +42,7 @@ const Navbar = () => {
           className="flex items-center gap-2 text-lg font-medium transition-opacity hover:opacity-80"
         >
           <Avatar className="h-8 w-8">
-            <AvatarImage src="/lovable-uploads/5ee6d352-d1fd-4479-9b08-5d986b38b6fc.png" alt="Divesh Saini" />
+            <AvatarImage src="/lovable-uploads/divesh-profile.png" alt="Divesh Saini" />
             <AvatarFallback>DS</AvatarFallback>
           </Avatar>
           Divesh Saini
