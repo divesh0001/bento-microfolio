@@ -2,17 +2,29 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
-type TabType = "education" | "skills" | "achievements";
+type TabType = "experience" | "education" | "skills" | "achievements";
 
 const About = () => {
-  const [activeTab, setActiveTab] = useState<TabType>("education");
+  const [activeTab, setActiveTab] = useState<TabType>("experience");
+
+  const experienceData = [
+    {
+      company: "Salescode.ai",
+      role: "Software Engineer Intern",
+      details: [
+        "Engineered an automated data processing module using Java + Next.js to generate CSV reports and distribute them to business analysts.",
+        "Enhanced the Shield analytics platform by developing UI components and optimizing Jenkins-triggered workflow automation.",
+        "Developing an internal API Testing Framework to standardize endpoint validation and improve CI/CD reliability across product teams."
+      ]
+    }
+  ];
 
   const educationData = [
     {
       institution: "Bennett University",
       degree: "B.Tech in Computer Science & Engineering",
       duration: "2022 - 2026 (Expected)",
-      details: "CGPA: 9.41/10",
+      details: "CGPA: 9.20/10",
     },
     {
       institution: "St. Xavier's School",
@@ -60,7 +72,7 @@ const About = () => {
 
         <div className="flex flex-col space-y-8">
           <div className="flex space-x-1 overflow-x-auto pb-2">
-            {["education", "skills", "achievements"].map((tab) => (
+            {["experience", "education", "skills", "achievements"].map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab as TabType)}
@@ -77,6 +89,26 @@ const About = () => {
           </div>
 
           <div className="glass rounded-2xl p-8 animate-fade-in">
+            {activeTab === "experience" && (
+              <div className="space-y-8">
+                {experienceData.map((item, index) => (
+                  <div key={index} className="flex flex-col md:flex-row md:items-start">
+                    <div className="md:w-1/3 mb-2 md:mb-0">
+                      <div className="text-sm text-neutral-500">{item.role}</div>
+                    </div>
+                    <div className="md:w-2/3">
+                      <h3 className="text-lg font-semibold">{item.company}</h3>
+                      <ul className="mt-2 space-y-2">
+                        {item.details.map((detail, idx) => (
+                          <li key={idx} className="text-sm text-neutral-700">• {detail}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+
             {activeTab === "education" && (
               <div className="space-y-8">
                 {educationData.map((item, index) => (
