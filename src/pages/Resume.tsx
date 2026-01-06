@@ -32,7 +32,7 @@ const Resume = () => {
                   <div className="text-sm text-neutral-500">Expected May 2026</div>
                 </div>
                 <div>B.Tech in Computer Science and Engineering</div>
-                <div className="text-sm text-neutral-600">CGPA: 9.41/10.00 • Greater Noida</div>
+                <div className="text-sm text-neutral-600">CGPA: 9.20/10.00 • Greater Noida</div>
               </div>
               <div>
                 <div className="flex justify-between">
@@ -54,6 +54,20 @@ const Resume = () => {
           </section>
           
           <section className="mb-8">
+            <h3 className="text-lg font-semibold mb-4">Experience</h3>
+            <div>
+              <div className="flex justify-between">
+                <div className="font-medium">Software Engineer Intern — Salescode.ai</div>
+              </div>
+              <ul className="text-sm mt-2 space-y-1">
+                <li>• Engineered an automated data processing module using Java + Next.js to generate CSV reports and distribute them to business analysts.</li>
+                <li>• Enhanced the Shield analytics platform by developing UI components and optimizing Jenkins-triggered workflow automation.</li>
+                <li>• Developing an internal API Testing Framework to standardize endpoint validation and improve CI/CD reliability across product teams.</li>
+              </ul>
+            </div>
+          </section>
+          
+          <section className="mb-8">
             <h3 className="text-lg font-semibold mb-4">Projects</h3>
             <div className="space-y-6">
               <div>
@@ -65,11 +79,11 @@ const Resume = () => {
                   </div>
                 </div>
                 <ul className="text-sm mt-2 space-y-1">
-                  <li>• Built and deployed a stock analysis platform using a Stacked LSTM (TensorFlow/Keras), achieving 2% test error (RMSE 213.2) on stock price forecasting.</li>
-                  <li>• Boosted predictive accuracy by 30% over baseline models through advanced preprocessing and real-time Tiingo API data integration.</li>
-                  <li>• Integrated a Botpress chatbot trained on custom financial data to enhance user interaction.</li>
+                  <li>• Engineered a full-stack stock forecasting platform using Stacked LSTM with 2% test error on real-market data.</li>
+                  <li>• Elevated prediction performance by 30% through data pipeline refinement and live Tiingo API ingestion.</li>
+                  <li>• Deployed an in-platform Botpress financial assistant to streamline user guidance and engagement.</li>
                 </ul>
-                <div className="text-sm text-neutral-600 mt-2">Tech-Stacks: TensorFlow, Keras, LSTM, Python, Flask, Tiingo API, Botpress, MongoDB</div>
+                <div className="text-sm text-neutral-600 mt-2">Tech-Stack: TensorFlow, Keras, LSTM, Python, Flask, Tiingo API, Botpress, MongoDB</div>
               </div>
               <div>
                 <div className="flex justify-between">
@@ -79,11 +93,11 @@ const Resume = () => {
                   </div>
                 </div>
                 <ul className="text-sm mt-2 space-y-1">
-                  <li>• Developed a ResNet50-based deep learning model for skin disease classification, achieving 66% accuracy and 0.88 ROC AUC on a 5-class dataset.</li>
-                  <li>• Automated disease prediction and confidence scoring for user-uploaded medical images.</li>
-                  <li>• Visualized and interpreted results using ROC curves and confusion matrices.</li>
+                  <li>• Designed a ResNet50-based model for 5-class disease detection achieving 66% accuracy and 0.88 ROC-AUC.</li>
+                  <li>• Delivered real-time diagnosis with confidence scoring for user-uploaded dermatology images.</li>
+                  <li>• Benchmarked performance using ROC curves and confusion matrices for higher reliability and medical interpretability.</li>
                 </ul>
-                <div className="text-sm text-neutral-600 mt-2">Tech-Stacks: Python, TensorFlow, Scikit-learn, ResNet50, Pandas, Matplotlib, Seaborn</div>
+                <div className="text-sm text-neutral-600 mt-2">Tech-Stack: Python, TensorFlow, Scikit-learn, ResNet50, Pandas, Matplotlib, Seaborn</div>
               </div>
               <div>
                 <div className="flex justify-between">
@@ -93,11 +107,11 @@ const Resume = () => {
                   </div>
                 </div>
                 <ul className="text-sm mt-2 space-y-1">
-                  <li>• Focused on the implementation of the YOLOv8 model for real-time object detection and analysis.</li>
-                  <li>• Curated and annotated "threat" and "non-threat" images, reducing false positive rates by 30% and improving real-time alert precision.</li>
-                  <li>• Integrated model into Flask backend, enabling intelligent video analytics and automated monitoring with Python and Firebase.</li>
+                  <li>• Applied YOLOv8 for real-time threat recognition on continuous video streams with high inference speed.</li>
+                  <li>• Curated and labeled threat datasets, cutting false alerts by 30% and strengthening detection precision.</li>
+                  <li>• Integrated the model into a Flask backend for autonomous video analytics and alerting workflows.</li>
                 </ul>
-                <div className="text-sm text-neutral-600 mt-2">Tech-Stacks: Python, Flask, Firebase, OpenCV, YOLOv8, Poetry</div>
+                <div className="text-sm text-neutral-600 mt-2">Tech-Stack: Python, Flask, Firebase, OpenCV, YOLOv8, Poetry</div>
               </div>
             </div>
           </section>
@@ -136,8 +150,6 @@ const Resume = () => {
               <li>Completed Pw skill Data Science Masters 2.0 course of 9 months.</li>
               <li>Solved 350+ Data Structures and Algorithms problems on LeetCode.</li>
               <li>Won the 3rd prize in Spin The Code contest organised by GeeksForGeeks in December 2022.</li>
-              <li>Awarded for creating an outstanding project at the Hackeye Competition, securing a top 15 position in our university.</li>
-              <li>Scored 92.15 percentile in JEE Mains 2022.</li>
             </ul>
           </section>
           
@@ -145,8 +157,7 @@ const Resume = () => {
             <h3 className="text-lg font-semibold mb-4">Position of Responsibilities</h3>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li>Tech Head: Data Science Society, Bennett University.</li>
-              <li>Organiser: Organised an Inter-College Hackathon ENIGMA in which more than 50 teams have participated from Delhi-NCR region In April 2024.</li>
-              <li>Sports Captain and General Secretary: Led school sports teams and student council, showcasing leadership, organizational skills, and teamwork.</li>
+              <li>Organiser of an Inter-College Hackathon ENIGMA in which more than 50 teams have participated from Delhi-NCR region in April 2024.</li>
             </ul>
           </section>
         </div>
